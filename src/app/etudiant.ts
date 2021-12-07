@@ -1,7 +1,14 @@
 export class Etudiant {
-    numInscription:number;
+    numInscription: number;
     adresseETU:string;
     nameETU:string;
     prenomETU:string;
-    dateEntree:Date;
+    dateEntree:String;
+    constructor(){
+        this.numInscription=0;
+        this.adresseETU="";
+        this.nameETU="";
+        this.prenomETU="";
+        this.dateEntree="";
+    }
 }

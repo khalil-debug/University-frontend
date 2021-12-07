@@ -1,5 +1,7 @@
+import { HtmlParser } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Etudiant } from '../etudiant';
+import { EtudiantService } from '../etudiant.service';
 
 @Component({
   selector: 'app-etudiant-list',
@@ -10,9 +12,17 @@ export class EtudiantListComponent implements OnInit {
 
   etudiants:Etudiant[];
 
-  constructor() { }
+  constructor(private etudiantService: EtudiantService) { 
+    this.etudiants=[];
+  }
 
   ngOnInit(): void {
+    this.getEtudiants();
+  }
+  private getEtudiants() {
+    this.etudiantService.getEtudientList().subscribe(data =>
+      {this.etudiants= data;}
+    );
   }
 
 }
