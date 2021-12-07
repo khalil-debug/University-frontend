@@ -1,1 +1,19 @@
-<p>etudiant-list works!</p>
+<h2> Liste des Etudiants</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nom Etudiant</th>
+            <th>Prenom Etudiant</th>
+            <th>Adresse Email</th>
+            <th>Date d'Entrée</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let etudiant of etudiants">
+            <td>{{etudiant.nameETU}}</td>
+            <td>{{etudiant.prenomETU}}</td>
+            <td>{{etudiant.adresseETU}}</td>
+            <td>{{etudiant.dateEntree}}</td>
+        </tr>
+    </tbody>
+</table>
