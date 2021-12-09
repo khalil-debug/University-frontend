@@ -3,12 +3,12 @@ export class Etudiant {
     adresseETU:string;
     nameETU:string;
     prenomETU:string;
-    dateEntree:String;
+    dateEntree:Date;
     constructor(){
         this.numInscription=0;
         this.adresseETU="";
         this.nameETU="";
         this.prenomETU="";
-        this.dateEntree="";
+        this.dateEntree=new Date();
     }
 }

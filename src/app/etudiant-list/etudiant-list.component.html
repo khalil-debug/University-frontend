@@ -7,7 +7,6 @@
             <th>Prenom Etudiant</th>
             <th>Adresse Email</th>
             <th>Date d'Entrée</th>
-            <th>working</th>
         </tr>
     </thead>
     <tbody>
@@ -16,8 +15,7 @@
             <td>{{etudiant.nameETU}}</td>
             <td>{{etudiant.prenomETU}}</td>
             <td>{{etudiant.adresseETU}}</td>
-            <td>{{etudiant.dateEntree}}</td>
-            <td><h1>this is working</h1></td>
+            <td>{{etudiant.dateEntree | date}}</td>
         </tr>
     </tbody>
 </table>
