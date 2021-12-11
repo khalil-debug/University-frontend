@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EtudiantListComponent } from './etudiant-list/etudiant-list.component';
+import { CreerEtudiantComponent } from './creer-etudiant/creer-etudiant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EtudiantListComponent
+    EtudiantListComponent,
+    CreerEtudiantComponent
   ],
   imports: [
     BrowserModule,
