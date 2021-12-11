@@ -1,6 +1,21 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerlink="etudiants" routerLinkActive="active" class="nav-link">Liste d'étudiants</a>
+    </li>
+  </ul>
+</nav>
+
 <h1 class="text-center">{{title}}</h1>
 <br>
 <br>
 <div class="container">
-  <app-etudiant-list></app-etudiant-list>
+  <router-outlet></router-outlet>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <span>Ceci est le projet effectué par Khalil Trigui et Eya ben Yedder.</span>
+  </div>
+
+</footer>
