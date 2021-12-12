@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">
+    <h2>Modifier l'université {{univ.nomUNV}}</h2>
+    <br>
+    <form (ngSubmit)= "modif()">
+        <div class="form-group">
+            <label for="nom">Nom complet de l'université:</label>
+            <input type="text" class="form-control" id="nom" [(ngModel)] = "univ.nomUNV" name="nom">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="adr">Adresse de l'université:</label>
+            <input type="text" class="form-control" id="adr" [(ngModel)]="univ.adresseSite" name="adr">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="code">Code de l'université:</label>
+            <input type="text" class="form-control" id="code" [(ngModel)] = "univ.codeUNV" name="code">
+        </div>
+        <br>
+        <br>
+        <button class="btn btn-success" type="submit">Modifier.</button>
+    </form>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Etudiant } from '../etudiant';
 import { EtudiantService } from '../etudiant.service';
@@ -23,6 +24,7 @@ export class UpdateEtudiantComponent implements OnInit {
       this.etud=data;
 
     }, error => console.log(error))
+    
   }
 
   enregistrement(){
@@ -30,6 +32,8 @@ export class UpdateEtudiantComponent implements OnInit {
         this.naviguer();
       },
       error=>console.log(error));
+
+      
   }
 
   naviguer(){

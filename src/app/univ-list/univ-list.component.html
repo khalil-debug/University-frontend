@@ -1,0 +1,21 @@
+<h2> Liste des Universités</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Code de l'université</th>
+            <th>Nom de l'unicersité</th>
+            <th>Adresse de l'université</th>
+            <th>Actions:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let univ of universites">
+            <td>{{univ.codeUNV}}</td>
+            <td>{{univ.nomUNV}}</td>
+            <td>{{univ.adresseSite}}</td>
+            <td>
+                <button (click)="updateUniv(univ.codeUNV)" class="btn btn-info">Modifier.</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
