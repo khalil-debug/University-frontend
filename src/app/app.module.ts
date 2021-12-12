@@ -7,13 +7,15 @@ import { EtudiantListComponent } from './etudiant-list/etudiant-list.component';
 import { CreerEtudiantComponent } from './creer-etudiant/creer-etudiant.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateEtudiantComponent } from './update-etudiant/update-etudiant.component';
+import { DeleteEtudiantComponent } from './delete-etudiant/delete-etudiant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EtudiantListComponent,
     CreerEtudiantComponent,
-    UpdateEtudiantComponent
+    UpdateEtudiantComponent,
+    DeleteEtudiantComponent
   ],
   imports: [
     BrowserModule,
