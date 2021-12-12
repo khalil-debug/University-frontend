@@ -19,6 +19,7 @@
             <td>{{etudiant.dateEntree | date}}</td>
             <td>
                 <button (click)="updateEtudiant(etudiant.numInscription)" class="btn btn-info">Modifier.</button>
+                <button (click)="deleteEtudiant(etudiant.numInscription)" class="btn btn-danger" style="margin-left: 10%;">Supprimer.</button>
             </td>
         </tr>
     </tbody>

@@ -28,7 +28,14 @@ export class EtudiantListComponent implements OnInit {
   }
 
   updateEtudiant(id: number){
-    this.router.navigate(['update-etudiant', id]);
+    this.router.navigate(['update-etudiant', id]); 
+  }
+
+  deleteEtudiant(id: number){
+    this.etudiantService.suppEtudiant(id).subscribe(data =>{
+      console.log(data)
+      this.getEtudiants();
+    });
   }
 
 }

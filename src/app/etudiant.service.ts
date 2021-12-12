@@ -27,6 +27,8 @@ export class EtudiantService {
       return this.httpClient.put(`${this.modifURL}/${id}`,etu);
     }
 
-    private suppURL ="http://localhost:8080/Etudiant//delete etudiant";
-    
+    private suppURL ="http://localhost:8080/Etudiant/deleteEtudiant";
+    suppEtudiant(id:number):Observable<object>{
+      return this.httpClient.delete(`${this.suppURL}/${id}`);
+    }
   }
