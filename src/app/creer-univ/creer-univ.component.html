@@ -1,7 +1,7 @@
 <div class="col-md-6 offset-md-3">
     <h2>Ajouter Un Etudiant</h2>
     <br>
-    <form (ngSubmit)= "Ajout()">
+    <form (ngSubmit)= "Ajout()" name="form">
         <div class="form-group">
             <label for="nom">Nom complet de l'université:</label>
             <input type="text" class="form-control" id="nom" [(ngModel)] = "uni.nomUNV" name="nom">
@@ -9,13 +9,12 @@
         <br>
         <div class="form-group">
             <label for="adr">Adresse de l'université:</label>
-            <input type="text" class="form-control" id="adr" [(ngModel)]="uni.adresseSite" name="adr">
+            <input type="text" class="form-control" id="adr" [(ngModel)]="uni.adresseSite" name="adr" >
+            <span ng-show="form.uni.adresseSite.$touched && form.uni.adresseSite.$invalid"> 
+            <b>Saisie obligatoire de la marque</b> 
+       </span>
         </div>
-        <br>
-        <div class="form-group">
-            <label for="code">Code de l'université:</label>
-            <input type="text" class="form-control" id="code" [(ngModel)] = "uni.codeUNV" name="code">
-        </div>
+        
         <br>
         <br>
         <button class="btn btn-success" type="submit">Ajouter.</button>

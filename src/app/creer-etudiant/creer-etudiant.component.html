@@ -9,17 +9,12 @@
         <br>
         <div class="form-group">
             <label for="nom">Nom:</label>
-            <input type="text" class="form-control" id="nom" [(ngModel)]="etud.nameETU" name="nom">
+            <input type="text" class="form-control" id="nom" [(ngModel)]="etud.nameETU" name="nom" required>
         </div>
         <br>
         <div class="form-group">
             <label for="email">Adresse Email:</label>
-            <input type="text" class="form-control" id="email" [(ngModel)] = "etud.adresseETU" name="email">
-        </div>
-        <br>
-        <div class="form-group">
-            <label for="num">Numéro d'inscription:</label>
-            <input type="text" class="form-control" id="num" [(ngModel)] = "etud.numInscription" name="num">
+            <input type="text" class="form-control" id="email" [(ngModel)] = "etud.adresseETU" name="email" required>
         </div>
         <br>
         <div class="form-group">
